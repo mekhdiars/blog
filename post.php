@@ -16,9 +16,7 @@
 <body>
     <?php include_once "blocks/header.php"; ?>
 
-    <main>
-        <!-- <?php echo '<pre>' . print_r($_GET['id'], true) . '</pre>'; ?> -->
-        
+    <main>        
         <div class='post'>
             <h2><?= $article->title ?></h2>
             <p class="anons"><?= $article->anons ?></p><br>

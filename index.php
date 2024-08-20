@@ -13,9 +13,7 @@
     ?>
 
     <main>
-        <?php
-            // echo '<pre>' . print_r($article, true) . '</pre>';
-            
+        <?php            
             include_once 'lib/mysql.php';
 
             $query = $pdo->query('SELECT * FROM articles ORDER BY date DESC');

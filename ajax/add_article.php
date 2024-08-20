@@ -16,7 +16,7 @@ if ($error != '') {
     exit();
 }
 
-include_once '../lib/mysql.php'; // подключение к БД
+include_once '../lib/mysql.php';
 
 $query = $pdo->prepare("INSERT INTO articles (title, anons, full_text, date, avtor) VALUES (:title, :anons, :full_text, :date, :avtor)");
 $query->execute([':title' => $title, ':anons' => $anons, ':full_text' => $fullText, ':date' => time(), ':avtor' => $_COOKIE['log']]);

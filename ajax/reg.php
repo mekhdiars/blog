@@ -18,7 +18,7 @@ if ($error != '') {
 
 $password = md5($password);
 
-include_once '../lib/mysql.php'; // подключение к БД
+include_once '../lib/mysql.php';
 
 $user = $pdo->prepare("SELECT id FROM users WHERE email = :email");
 $user->execute([':email' => $email]);

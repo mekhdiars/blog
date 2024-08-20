@@ -1,7 +1,7 @@
 <?php
 include_once '../lib/mysql.php';
 
-$query = $pdo->query("SELECT * FROM chat ORDER BY id DESC");
+$query = $pdo->query("SELECT * FROM chat ORDER BY id");
 $messages = $query->fetchAll(PDO::FETCH_OBJ);
 
 if($messages != false) {
